@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;blue fase in first test to create User&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repo/AppUserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" afterDir="false" />
+    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;red and green phase in findUserByUsername_ifUsernameExists_shouldLogin,&#10;and created method for searching for the user&quot;">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674756144915</updated>
       <workItem from="1674756146262" duration="577000" />
-      <workItem from="1674756751825" duration="3765000" />
+      <workItem from="1674756751825" duration="4551000" />
     </task>
     <task id="LOCAL−00001" summary="&quot;red fase in first test&quot;">
       <created>1674756433166</created>
@@ -184,7 +179,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1674758417191</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="&quot;red and green phase in findUserByUsername_ifUsernameExists_shouldLogin,&#10;and created method for searching for the user&quot;">
+      <created>1674760926684</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1674760926684</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +206,7 @@
     <MESSAGE value="&quot;red fase in first test&quot;" />
     <MESSAGE value="&quot;green and blue fase in test to create AppUser&quot;" />
     <MESSAGE value="&quot;blue fase in first test to create User&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;blue fase in first test to create User&quot;" />
+    <MESSAGE value="&quot;red and green phase in findUserByUsername_ifUsernameExists_shouldLogin,&#10;and created method for searching for the user&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;red and green phase in findUserByUsername_ifUsernameExists_shouldLogin,&#10;and created method for searching for the user&quot;" />
   </component>
 </project>
