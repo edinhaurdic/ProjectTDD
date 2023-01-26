@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;green and blue fase in test to create AppUser&quot;" />
+    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;green and blue fase in test to create AppUser&quot;">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +48,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppUserTest.create_newAppUser_shouldCreateAppUser">
+  <component name="RunManager" selected="JUnit.AppUserTest.create_newAppUserWithExpectedUserName_shouldCreateNewAppUser">
     <configuration name="AppUserTest.constructor_withoutProp_ShouldExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTDD" />
       <extension name="coverage">
@@ -58,6 +60,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.AppUserTest" />
       <option name="METHOD_NAME" value="constructor_withoutProp_ShouldExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppUserTest.create_newAppUserWithExpectedUserName_shouldCreateNewAppUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AppUserTest" />
+      <option name="METHOD_NAME" value="create_newAppUserWithExpectedUserName_shouldCreateNewAppUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppUserTest.create_newAppUserWithExpectedUserName_shouldCreateNewAppUser" />
         <item itemvalue="JUnit.AppUserTest.create_newAppUser_shouldCreateAppUser" />
         <item itemvalue="JUnit.AppUserTest.constructor_withoutProp_ShouldExist" />
       </list>
@@ -95,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674756144915</updated>
       <workItem from="1674756146262" duration="577000" />
-      <workItem from="1674756751825" duration="1006000" />
+      <workItem from="1674756751825" duration="1573000" />
     </task>
     <task id="LOCAL−00001" summary="&quot;red fase in first test&quot;">
       <created>1674756433166</created>
@@ -115,7 +134,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1674757509726</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="&quot;green and blue fase in test to create AppUser&quot;">
+      <created>1674758320231</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1674758320231</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
