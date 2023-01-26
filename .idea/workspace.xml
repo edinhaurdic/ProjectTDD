@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;green and blue fase in test to create AppUser&quot;">
+    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;blue fase in first test to create User&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repo/AppUserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +20,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,24 +49,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.service" />
+      <recent name="org.example.repo" />
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppUserTest.create_newAppUserWithExpectedUserName_shouldCreateNewAppUser">
+  <component name="RunManager" selected="JUnit.AppUserTest.findUserByUsername_ifUsernameExists_shouldLogin">
     <configuration name="AppUserTest.constructor_withoutProp_ShouldExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTDD" />
       <extension name="coverage">
@@ -97,8 +118,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppUserTest.findUserByUsername_ifUsernameExists_shouldLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AppUserTest" />
+      <option name="METHOD_NAME" value="findUserByUsername_ifUsernameExists_shouldLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppUserTest.findUserByUsername_ifUsernameExists_shouldLogin" />
         <item itemvalue="JUnit.AppUserTest.create_newAppUserWithExpectedUserName_shouldCreateNewAppUser" />
         <item itemvalue="JUnit.AppUserTest.create_newAppUser_shouldCreateAppUser" />
         <item itemvalue="JUnit.AppUserTest.constructor_withoutProp_ShouldExist" />
@@ -114,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674756144915</updated>
       <workItem from="1674756146262" duration="577000" />
-      <workItem from="1674756751825" duration="1573000" />
+      <workItem from="1674756751825" duration="3765000" />
     </task>
     <task id="LOCAL−00001" summary="&quot;red fase in first test&quot;">
       <created>1674756433166</created>
@@ -140,7 +178,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1674758320231</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="&quot;blue fase in first test to create User&quot;">
+      <created>1674758417191</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1674758417191</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +204,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;red fase in first test&quot;" />
     <MESSAGE value="&quot;green and blue fase in test to create AppUser&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;green and blue fase in test to create AppUser&quot;" />
+    <MESSAGE value="&quot;blue fase in first test to create User&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;blue fase in first test to create User&quot;" />
   </component>
 </project>
