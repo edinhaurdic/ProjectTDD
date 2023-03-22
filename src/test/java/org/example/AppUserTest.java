@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.entity.AppUser;
 import org.example.repo.AppUserRepo;
 import org.example.service.AppUserService;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +22,7 @@ public class AppUserTest {
     AppUserRepo appUserRepo;
 
     private AppUserService appUserService;
-    private static String username = "Edin";
+    private static String username = "Göran";
     private static String password = "1234hej";
 
     @BeforeEach
@@ -36,7 +37,7 @@ public class AppUserTest {
         AppUser appUser;
 
         //When
-        appUser = new AppUser("Edin", "1234hej");
+        appUser = new AppUser( "Edin", "1234hej");
 
         //Then
         assertSame(appUser.getUsername(), "Edin");
@@ -45,7 +46,7 @@ public class AppUserTest {
     @Test
     public void findUserByUsername_ifUsernameExists_shouldLogin(){
         //given
-        AppUser appUser = new AppUser(username, password);
+        AppUser appUser = new AppUser( username,password);
 
         //When
         when(appUserRepo.findByUsername(username)).thenReturn(Optional.of(appUser));
@@ -54,6 +55,21 @@ public class AppUserTest {
         //assert
         assertEquals(appUser, loggedInUser);
         verify(appUserRepo, times(1)).findByUsername(username);
+    }
+
+    @Test
+    public void loginIn(){
+        //GIVEN
+        String existingUsername = "Björn";
+        String correctPassword = "1212";
+
+        //WHEN
+        when(appUserRepo.findByUsername(existingUsername)).thenReturn(Optional.of(new AppUser(existingUsername, correctPassword)));
+        boolean result = appUserService.login(existingUsername,correctPassword);
+
+        //THEN
+        assertTrue(result);
+
     }
 
 }

@@ -1,6 +1,6 @@
 package org.example.service;
 
-import org.example.AppUser;
+import org.example.entity.AppUser;
 import org.example.repo.AppUserRepo;
 import org.springframework.stereotype.Service;
 
@@ -15,5 +15,9 @@ public class AppUserService {
 
     public AppUser findByUsername(String username) {
         return appUserRepo.findByUsername(username).orElseThrow();
+    }
+
+    public boolean login(String existingUsername, String correctPassword) {
+        return false;
     }
 }

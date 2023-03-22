@@ -1,6 +1,6 @@
 package org.example.repo;
 
-import org.example.AppUser;
+import org.example.entity.AppUser;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
