@@ -46,7 +46,7 @@ public class AppUserTest {
     @Test
     public void findUserByUsername_ifUsernameExists_shouldLogin(){
         //given
-        AppUser appUser = new AppUser( username,password);
+        AppUser appUser = new AppUser(username,password);
 
         //When
         when(appUserRepo.findByUsername(username)).thenReturn(Optional.of(appUser));
@@ -71,5 +71,18 @@ public class AppUserTest {
         assertTrue(result);
 
     }
+    @Test
+    public void login_withWrongUsername_shouldThrowException(){
+        //Given
+        String wrongUser = "Edin";
+
+
+        //WHEN
+
+
+        //THEN
+
+    }
+
 
 }

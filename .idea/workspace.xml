@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;röda fasen i LoginTester&quot;">
+    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;gröna fasen i LoginTester&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WrongUserNameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repo/AppUserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repo/AppUserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +64,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
       <recent name="org.example.service" />
       <recent name="org.example.repo" />
-      <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppUserTest.loginIn">
+  <component name="RunManager" selected="JUnit.AppUserTest.login_withWrongUsername_shouldThrowException">
     <configuration name="AppUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTDD" />
       <extension name="coverage">
@@ -92,22 +96,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.AppUserTest" />
       <option name="METHOD_NAME" value="create_newAppUserWithExpectedUserName_shouldCreateNewAppUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppUserTest.create_newAppUser_shouldCreateAppUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectTDD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AppUserTest" />
-      <option name="METHOD_NAME" value="create_newAppUser_shouldCreateAppUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,13 +133,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppUserTest.login_withWrongUsername_shouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AppUserTest" />
+      <option name="METHOD_NAME" value="login_withWrongUsername_shouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppUserTest.login_withWrongUsername_shouldThrowException" />
+        <item itemvalue="JUnit.AppUserTest.findUserByUsername_ifUsernameExists_shouldLogin" />
         <item itemvalue="JUnit.AppUserTest.loginIn" />
         <item itemvalue="JUnit.AppUserTest" />
-        <item itemvalue="JUnit.AppUserTest.findUserByUsername_ifUsernameExists_shouldLogin" />
         <item itemvalue="JUnit.AppUserTest.create_newAppUserWithExpectedUserName_shouldCreateNewAppUser" />
-        <item itemvalue="JUnit.AppUserTest.create_newAppUser_shouldCreateAppUser" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +172,7 @@
       <workItem from="1678786629066" duration="192000" />
       <workItem from="1678786833367" duration="1598000" />
       <workItem from="1679050896741" duration="12000" />
-      <workItem from="1679482457622" duration="3173000" />
+      <workItem from="1679482457622" duration="9093000" />
     </task>
     <task id="LOCAL−00001" summary="&quot;red fase in first test&quot;">
       <created>1674756433166</created>
@@ -218,7 +222,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1679485274022</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="&quot;gröna fasen i LoginTester&quot;">
+      <created>1679486291586</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1679486291586</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +252,7 @@
     <MESSAGE value="&quot;red and green phase in findUserByUsername_ifUsernameExists_shouldLogin,&#10;and created method for searching for the user&quot;" />
     <MESSAGE value="&quot;blue phase in findUserByUsername_ifUsernameExists_shouldLogin&quot;" />
     <MESSAGE value="&quot;röda fasen i LoginTester&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;röda fasen i LoginTester&quot;" />
+    <MESSAGE value="&quot;gröna fasen i LoginTester&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;gröna fasen i LoginTester&quot;" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.example.WrongUserNameException;
 import org.example.entity.AppUser;
 import org.example.repo.AppUserRepo;
 import org.springframework.stereotype.Service;
@@ -26,5 +27,12 @@ public class AppUserService {
        else{
            return false;
        }
+    }
+
+
+    public Exception wrongUsername(String correctUser, String password) {
+        Exception WrongUserNameException = new Exception();
+        return WrongUserNameException;
+
     }
 }
