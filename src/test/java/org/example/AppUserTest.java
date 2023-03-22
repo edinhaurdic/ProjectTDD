@@ -58,7 +58,7 @@ public class AppUserTest {
     }
 
     @Test
-    public void loginIn(){
+    public void login_withCorrectCredentials_shouldReturnTrue(){
         //GIVEN
         String existingUsername = "Björn";
         String correctPassword = "1212";
