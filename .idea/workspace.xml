@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;gröna fasen i LoginTester&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WrongUserNameException.java" afterDir="false" />
+    <list default="true" id="a2ab59be-654f-4f93-83b0-2062a02e73da" name="Changes" comment="&quot;röd fasen i WrongUserNameException&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repo/AppUserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repo/AppUserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WrongUserNameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WrongUserNameException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AppUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" afterDir="false" />
     </list>
@@ -172,7 +171,8 @@
       <workItem from="1678786629066" duration="192000" />
       <workItem from="1678786833367" duration="1598000" />
       <workItem from="1679050896741" duration="12000" />
-      <workItem from="1679482457622" duration="9093000" />
+      <workItem from="1679482457622" duration="10342000" />
+      <workItem from="1679651460208" duration="696000" />
     </task>
     <task id="LOCAL−00001" summary="&quot;red fase in first test&quot;">
       <created>1674756433166</created>
@@ -228,7 +228,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1679486291586</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="&quot;röd fasen i WrongUserNameException&quot;">
+      <created>1679502872937</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1679502872937</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +259,7 @@
     <MESSAGE value="&quot;blue phase in findUserByUsername_ifUsernameExists_shouldLogin&quot;" />
     <MESSAGE value="&quot;röda fasen i LoginTester&quot;" />
     <MESSAGE value="&quot;gröna fasen i LoginTester&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;gröna fasen i LoginTester&quot;" />
+    <MESSAGE value="&quot;röd fasen i WrongUserNameException&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;röd fasen i WrongUserNameException&quot;" />
   </component>
 </project>

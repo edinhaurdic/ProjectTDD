@@ -3,6 +3,7 @@ package org.example;
 import org.example.entity.AppUser;
 import org.example.repo.AppUserRepo;
 import org.example.service.AppUserService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -75,10 +76,10 @@ public class AppUserTest {
     public void login_withWrongUsername_shouldThrowException(){
         //Given
         String wrongUser = "Edin";
-
+        String rightUser = "Björn";
 
         //WHEN
-
+        assertThrows(WrongUserNameException.class, appUserService::wrongUsername);
 
         //THEN
 

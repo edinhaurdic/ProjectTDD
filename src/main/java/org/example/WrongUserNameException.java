@@ -1,4 +1,4 @@
 package org.example;
 
-public class WrongUserNameException{
+public class WrongUserNameException extends Exception{
 }

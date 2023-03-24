@@ -35,4 +35,7 @@ public class AppUserService {
         return WrongUserNameException;
 
     }
+
+    public void wrongUsername() {
+    }
 }
