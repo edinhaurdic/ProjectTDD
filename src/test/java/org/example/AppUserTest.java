@@ -75,8 +75,7 @@ public class AppUserTest {
     @Test
     public void login_withWrongUsername_shouldThrowException(){
         //Given
-        String wrongUser = "Edin";
-        String rightUser = "Björn";
+        AppUser appUser;
 
         //WHEN
         assertThrows(WrongUserNameException.class, appUserService::wrongUsername);
