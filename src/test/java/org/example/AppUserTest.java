@@ -88,7 +88,18 @@ public class AppUserTest {
 
     }
     @Test
-    public void login_withWrongPasswordshoudThrowException(){
+    public void login_withWrongPassword_shouldThrowException(){
+        //given
+        String rightUser = "Börje";
+        String wrongPassword = "1122";
+        String correctPassword = "1234";
+
+        //when
+        when(appUserRepo.findByUsername(rightUser)).thenReturn(Optional.of(new AppUser(rightUser, correctPassword)));
+        assertThrows(WrongPasswordException.class, () -> appUserService.login(rightUser, wrongPassword));
+
+
+        //then
 
     }
 
