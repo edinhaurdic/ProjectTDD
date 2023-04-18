@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.example.WrongPasswordException;
 import org.example.WrongUserNameException;
 import org.example.entity.AppUser;
 import org.example.repo.AppUserRepo;
@@ -27,7 +28,7 @@ public class AppUserService {
            return true;
        }
        else{
-           return false;
+           throw new WrongPasswordException();
        }
     }
     
