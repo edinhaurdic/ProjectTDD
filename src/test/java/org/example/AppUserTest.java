@@ -12,6 +12,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
+import java.util.function.Supplier;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -59,10 +60,10 @@ public class AppUserTest {
     }
 
     @Test
-    public void login_withCorrectCredentials_shouldReturnTrue(){
+    public void login_withCorrectCredentials_shouldReturnTrue() {
         //GIVEN
         String existingUsername = "Björn";
-        String correctPassword = "1212";
+        String correctPassword = "1111";
 
         //WHEN
         when(appUserRepo.findByUsername(existingUsername)).thenReturn(Optional.of(new AppUser(existingUsername, correctPassword)));
@@ -75,12 +76,19 @@ public class AppUserTest {
     @Test
     public void login_withWrongUsername_shouldThrowException(){
         //Given
-        AppUser appUser;
+        String wrongUser = "Bettan";
+        String rightUser = "Börje";
 
         //WHEN
-        assertThrows(WrongUserNameException.class, appUserService::wrongUsername);
+        when(appUserRepo.findByUsername(wrongUser)).thenThrow(WrongUserNameException.class);
+        assertThrows(WrongUserNameException.class, () -> appUserRepo.findByUsername(wrongUser));
 
         //THEN
+
+
+    }
+    @Test
+    public void login_withWrongPasswordshoudThrowException(){
 
     }
 

@@ -5,6 +5,8 @@ import org.example.entity.AppUser;
 import org.example.repo.AppUserRepo;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Executable;
+
 @Service
 public class AppUserService {
 
@@ -28,15 +30,21 @@ public class AppUserService {
            return false;
        }
     }
+    
+
+/*    public static class wrongUsername(String rightUser, String wrongUser){
+
+    }*/
 
 
-    public Exception wrongUsername(String correctUser, String password) {
-        Exception WrongUserNameException = new Exception();
-        return WrongUserNameException;
+/*    public void wrongUsername() throws WrongUserNameException {
+        throw new WrongUserNameException();
+    }*/
 
-    }
-
-    public void wrongUsername() {
-        if()
+    public static class wrongUsername {
+        public wrongUsername(String rightUser, String wrongUser) {
+            if(rightUser.equals(wrongUser))
+            throw new WrongUserNameException();
+        }
     }
 }
